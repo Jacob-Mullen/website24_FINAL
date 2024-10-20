@@ -1,0 +1,20 @@
+{% extends "layout.html"%}
+{% block contents %}
+ 
+
+<!-- this displays the make page -->
+<div class="make">
+    <div class=maketitle> 
+        <h1>Makes</h1>
+    </div>
+    <div class="rowone">
+        {% for item in results %}
+        <h2><a class="link" href="/make/{{item[0]}}" scr=>
+            <img class="carimage" src="{{item[2]}}">
+        </a></h2>     
+        {% endfor%}
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "layout.html"%}
+{% block contents %}
+ 
+
+<!-- this displays the specifi make page e.g honda toyota -->
+<div class="make">
+    <div class=maketitle> 
+        <h1>HOME</h1>
+    </div>
+    <div class=paragraph_o_bs> 
+        <h2>Welcome to JACOBS CAR WEBSITE®™, your ultimate destination for comprehensive car information. Whether you're a seasoned enthusiast or a curious consumer, our website provides detailed insights into a vast array of vehicles. From horsepower specifications to engine types and everything in between, we offer a wealth of data to empower your automotive decisions. Whether you're researching your next purchase or simply exploring the latest models, our curated collection of information ensures you stay informed and inspired. Join us as we dive into the world of cars, offering clarity and detail at your fingertips.</h2>
+    </div>
+    <div class="rowone">
+        {% for item in results %} 
+        <h2><a class="link" href="/car/{{item[0]}}">
+            <img class="carimage" src="/static/img/{{item[6]}}">
+            <h2>{{item[2]}}</h2> 
+        </a></h2>       
+        {% endfor%}
+    </div>
+</div>
+
+
+{% endblock %}

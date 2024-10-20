@@ -1,0 +1,86 @@
+/* GLOBAL */
+
+header{
+    margin-top: -15px;
+    position: absolute;
+    margin-left: 40%;
+}
+
+a:link, a:visited {
+    background-color: grey;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+  }
+  
+  a:hover, a:active {
+    background-color: white;
+    color: black;
+  }
+
+/* main car page*/
+
+.carinfo{
+    position: absolute;
+    margin: auto;
+    margin-top: 60px; 
+    width: 1800px;
+    height: 840px;
+}
+
+.title{ 
+    background-color: grey;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.info{ 
+    background-color: grey;
+    border-style: solid;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 1300px;
+    height: 740px;
+}
+
+/* FONTS */
+
+
+
+
+
+
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url(/static/img/websitebackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 5s;
+    animation-name: backgroundslide;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    position: absolute;
+    overflow: hidden;
+}
+@keyframes backgroundslide{
+	0%{
+        background-image: url("/static/img/websitebackground.jpg")
+    }
+    50%{
+        background-image: url("/static/img/websitebackground2.jpg")
+    }
+    100%{
+        background-image: url("/static/img/websitebackground.jpg")
+    }
+}

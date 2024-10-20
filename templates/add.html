@@ -1,0 +1,37 @@
+{% extends "layout.html"%}
+{% block contents %}
+
+
+<body>
+    <h1 class="titleadmin">Enter Text</h1>
+    <form action="/process" method="post" enctype="multipart/form-data">
+        <label for="cars" required required placeholder="Make"></label>
+        <select name="Make" id="cars">
+            {% for item in makes %}
+            <option value="{{item[0]}}">{{item[1]}}</option>
+            {% endfor%}
+        </select>
+        <input type="text" name="Model" required placeholder="Model"><br>
+        <select name="Engine" id="cars">
+            {% for item in engine %}
+            <option value="{{item[0]}}">{{item[1]}}</option>
+            {% endfor%}
+        </select>
+        <input type="text" name="Stock HP" required placeholder="Stock HP"><br>
+        <input type="text" name="Stock Torque" required placeholder="Stock Torque"><br>
+        <input type="text" name="Image" required placeholder="Image"><br>
+        <input type="text" name="Imageii" required placeholder="Image 2"><br>
+        <input type="text" name="Video" required placeholder="Video"><br>
+        <select name="Drive" id="cars">
+            {% for item in drive %}
+            <option value="{{item[0]}}">{{item[1]}}</option>
+            {% endfor%}
+        </select>
+        <input type="file" name="car_image" accept="image/*" required><br><br>
+        <input type="file" name="car_image2" accept="image/*" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+{% endblock %}

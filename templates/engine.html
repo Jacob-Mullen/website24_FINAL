@@ -1,0 +1,12 @@
+{% extends "layout.html"%}
+{% block contents %}
+
+
+<div class="rowonex">
+    {% for item in results %}
+    <a href="#modal1" class="gallery-item">
+        <img class="carimagex" src="/static/img/{{item[2]}}">
+    </a>    
+    {% endfor%}
+</div>
+{% endblock %}

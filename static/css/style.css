@@ -1,0 +1,403 @@
+/* navbar */
+
+header{
+    text-align: center;
+    margin-top: 14px; 
+}
+
+
+a:link, a:visited {
+    background-color: grey;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+  }
+  
+  a:hover, a:active {
+    background-color: white;
+    color: black;
+  }
+
+.nomaxwidth{
+    max-width:none; 
+}
+
+
+/* landing page*/
+.paragraph_o_bs{
+    background-color: grey;
+    border-style: solid;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: auto;
+}
+
+
+/* main car page*/
+
+.containercars{
+    margin: auto;
+    margin-top: 15px; 
+    width: 80%;
+    
+}
+
+.title{ 
+    background-color: grey;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.info{ 
+    background-color: grey;
+    border-style: solid;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 740px;
+    width: 100%;
+    float: inline-end;
+}
+
+.slider{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 1em;
+    width: 80%;
+    margin: auto;
+}
+/* Container Styling */
+.video {
+    max-width: 100%; 
+    margin: auto; 
+  }
+  
+  /* Slider Content Styling */
+  .hello {
+    position: relative;
+    padding-top: 15px;
+    width: 100%; /* Adjust the width to your liking */
+    height: 750px; /* Adjust the height to make it shorter */
+    margin: auto;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+  /* Slides and Video Styling */
+  .mySlides {
+    display: none; 
+    width: 100%;
+    height: 720px;
+    object-fit: cover; /* Ensures content scales properly */
+    margin-top: 15px;
+  }
+  
+  /* Adjust iframe to match image dimensions */
+  iframe.mySlides {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Navigation Button Styling */
+  .w3-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .w3-display-left {
+    left: 0;
+  }
+  
+  .w3-display-right {
+    right: 0;
+  }
+  
+  .w3-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+/* animation */
+
+/* Container Styling 
+.video {
+  max-width: 100%; 
+  margin: auto; 
+}
+
+/* Slider Content Styling 
+.w3-content {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+/* Slides and Video Styling 
+.mySlides {
+  display: none; 
+  width: 100%;
+  height: 100%;
+}
+
+/* Adjust iframe to match image dimensions 
+iframe.mySlides {
+  width: 100%;
+  height: 100%;
+}
+
+/* Navigation Button Styling 
+.w3-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.w3-display-left {
+  left: 0;
+}
+
+.w3-display-right {
+  right: 0;
+}
+
+.w3-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+*/
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url(/static/img/websitebackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 5s;
+    animation-name: backgroundslide;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+@keyframes backgroundslide{
+	0%{
+        background-image: url("/static/img/websitebackground.jpg")
+    }
+    50%{
+        background-image: url("/static/img/websitebackground2.jpg")
+    }
+    100%{
+        background-image: url("/static/img/websitebackground.jpg")
+    }
+}
+
+/* password https://youtu.be/McPdzhLRzCg?si=Rw06oIaGUeuwsA5f */
+
+/* make */
+.maketitle{
+    background-color: grey;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.make{
+    width: 80%;
+    margin: auto;
+}
+
+.rowone{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.carimage{
+    width: auto;
+    height: 150px;
+    /* makes it work but not on phone height 150px*/
+}
+
+.link{
+    width: 100%;
+
+}
+
+    /* password stuff also not:margin:auto won't work when you have a float or haven't specified a width. kohoutek: margin:auto won't work when you have a float or haven't specified a width.3 Feb 2012*/
+
+
+
+
+.password{ 
+    width: 40%;
+    margin: auto;
+}
+
+
+
+.passinside{
+    margin-left: auto;
+    width: 100%;
+    margin-top: 3%;
+
+}
+
+/*adding*/
+.titleadmin {
+    text-align: center; /* Center-aligns the title text */
+    color: black; /* Dark text color for better readability */
+    margin: 20px auto; /* Centers the title and adds spacing */
+    padding: 20px;
+    background-color: grey; /* Light grey background for the title */
+    border: 1px solid black; /* Border for better visibility */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 600px; /* Maximum width for larger screens */
+}
+
+/* Form Styling */
+form {
+    max-width: 600px; /* Set a max-width to ensure the form doesn’t stretch too wide */
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: grey; /* White background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border: 1px solid black; /* Light border for the form */
+}
+
+/* Input Fields */
+input[type="text"],
+select {
+    width: calc(100% - 22px); /* Adjust width to fit within form padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* File Input */
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50; /* Green background for the button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Adds space above the button */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #45a049; /* Darker green when hovered */
+}
+
+/* Label Styling */
+label {
+    display: block; /* Ensures the label is on its own line */
+    margin-bottom: 5px; /* Adds space below the label */
+}
+
+/* engines hopefully */
+
+.gallery-item img {
+    width: 550px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #bbb;
+}
+
+/* Display the modal when the target hash matches the id of the modal */
+.modal:target {
+  display: block;
+}
+
+.rowonex {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 500px; /* Set a fixed height for all images */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Space between items */
+  padding: 20px;
+}
+
+.carimagex {
+  width: 300px; /* Fixed width for the images */
+  height: 200px;
+  object-fit: cover; /* Ensure image covers the area without distortion */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Smooth image hover effect *//
+}

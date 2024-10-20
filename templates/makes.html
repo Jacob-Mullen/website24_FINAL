@@ -1,0 +1,21 @@
+{% extends "layout.html"%}
+{% block contents %}
+ 
+
+<!-- this displays the specifi make page e.g honda toyota -->
+<div class="make">
+    <div class=maketitle> 
+        <h1>Makes</h1>
+    </div>
+    <div class="rowone">
+        {% for item in results %} 
+        <h2><a class="link" href="/car/{{item[0]}}">
+            <img class="carimage" src="/static/img/{{item[6]}}">
+            <h2>{{item[2]}}</h2> 
+        </a></h2>       
+        {% endfor%}
+    </div>
+</div>
+
+
+{% endblock %}
